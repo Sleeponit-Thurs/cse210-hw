@@ -1,9 +1,18 @@
 using System;
+using System.Xml.Serialization;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop03 World!");
+        while (true)
+        {
+            Menu menu = new();
+            menu.DisplayMenu();
+            Reference scriptureGame = new();
+            scriptureGame.GetVerse();
+            scriptureGame.PlayScriptureGame();
+        }
+        
     }
 }
